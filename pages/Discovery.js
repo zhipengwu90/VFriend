@@ -18,6 +18,7 @@ import Toast from "react-native-root-toast";
 const Discovery = () => {
   const [characters, SetCharacters] = useState([]);
   const getCharacters = async () => {
+    //get all system characters from firebase
     try {
       const querySnapshot = await getDocs(
         collection(db, "vfriendData", "vdata", "systemCharacters")

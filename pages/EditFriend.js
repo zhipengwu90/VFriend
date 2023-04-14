@@ -19,7 +19,7 @@ const EditFriend = ({ route, navigation }) => {
 
 
 
-
+//update character info
   const submitHandler = (data) => {
     const docRef = doc(
       db,

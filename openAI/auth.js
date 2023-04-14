@@ -6,10 +6,9 @@ const sendToChatbot = async (message) => {
     const response = await axios.post(
       "https://api.openai.com/v1/chat/completions",
       {
+        //change the model to you need
         model: "gpt-3.5-turbo",
         messages: message,
-
-      
         temperature: 0.5,
         n: 1,
         frequency_penalty: 0,

@@ -1,3 +1,4 @@
+// This file is used to store dummy data for testing purposes
 const Users = [
     {
         id: 1,

@@ -1,5 +1,6 @@
-import { createContext, useState } from "react";
 
+import { createContext, useState } from "react";
+//define useContext
 export const DataContext = createContext({
   userData: [],
   setUserData: () => {},

@@ -15,9 +15,7 @@ import ChatPage from "./ChatPage";
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
 
-const addHandler = ({ naviation }) => {
-  console.log("add");
-};
+//defined the bottom tab navigator
 
 const HomeTabs = ({ navigation }) => {
   return (

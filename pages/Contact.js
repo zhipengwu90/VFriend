@@ -27,15 +27,17 @@ import {
   getDocs,
 } from "firebase/firestore";
 import Toast from "react-native-root-toast";
-
+// create icon to swipeable
 const AnimatedIcon = Animated.createAnimatedComponent(AntDesign);
-
+//
 const Contact = ({ navigation }) => {
+
+  //define the swipeable refs to close all swipeable when one is open
   const swipeableRefs = useRef({});
   function updateRefs(index, ref) {
     swipeableRefs.current[index] = ref;
   }
-
+//functio close swipeable 
   const closeSwipeables = () => {
     Object.values(swipeableRefs.current).forEach((ref) => {
       if (ref) {
@@ -65,7 +67,7 @@ const Contact = ({ navigation }) => {
           userId,
           "history"
         );
-
+//delete character from firebase and conversation
         await deleteDoc(userIdref);
         const q = await getDocs(conversationRef);
         q.docs.forEach(async (doc) => {

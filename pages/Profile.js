@@ -20,6 +20,7 @@ const Profile = () => {
     setName(e);
   };
 
+  //change the icon and edit state
   const editHandler = () => {
     if (!isEdited) {
       setIsEdited(true);

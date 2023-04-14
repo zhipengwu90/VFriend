@@ -48,16 +48,17 @@ const ChatPage = ({ route, navigation }) => {
   const lastMessage = conversation.length > 0 ? conversation[0].content : "";
   const color = message.length > 0 ? "#3F9797" : "#242323";
 
-
+//update message from input
   const updateMessage = (text) => {
     setMessage(text);
   };
-
+//scroll to bottom when new message is sent/received
   const scrollToBottom = () => {
     if (flatListRef.current) {
       flatListRef.current.scrollToOffset({ animated: true, offset: 0 });
     }
   };
+  //get conversation from firebase
   const getConversation = async () => {
     const firestoreRef = collection(
       db,
@@ -69,6 +70,7 @@ const ChatPage = ({ route, navigation }) => {
     );
 
     try {
+      //set conversation from firebase
       await onSnapshot(
         query(firestoreRef, orderBy("time", "desc")),
         (querySnapshot) => {
@@ -94,7 +96,7 @@ const ChatPage = ({ route, navigation }) => {
     }
   };
 
-
+//update last message to firebase
   useEffect(() => {
     updateLastMessageToFirebase(lastMessage);
   }, [lastMessage]);
@@ -157,13 +159,15 @@ const ChatPage = ({ route, navigation }) => {
     }
   };
 
+  //submit message 
+
   const submitHandler = async () => {
     if (message.length > 0) {
       setMessage("");
       updateMessageToFirebase(message, "user");
      
     }
-
+//get the last 4 messages then reverse them and add system message to array  and send to openAI
     const firstFourMessage = conversation
       .slice(0, 4)
       .reverse()
@@ -179,7 +183,7 @@ const ChatPage = ({ route, navigation }) => {
     ];
     sendToChatbotHandler(newMessage);
   };
-
+// send message to openAI
   const sendToChatbotHandler = async (newMessage) => {
     try {
       const response = await sendToChatbot(newMessage);
@@ -192,7 +196,7 @@ const ChatPage = ({ route, navigation }) => {
   useEffect(() => {
     getConversation();
   }, []);
-
+//scroll to bottom when there is change in conversation
   useEffect(() => {
     scrollToBottom();
   }, [conversation]);
@@ -215,7 +219,7 @@ const ChatPage = ({ route, navigation }) => {
   //   // Pop the screen from the navigation stack
   //   navigation.dispatch(e.data.action);
   // });
-
+// set title to name of friend
   useEffect(() => {
     navigation.setOptions({
       title: name,
