@@ -9,10 +9,10 @@ VFriend allows users to create virtual characters and chat with them using natur
 To run this app, you will need to have your OpenAI API key and create an **apikey.js** file under the OpenAI folder with your own API key. Additionally, you will need to create a Firebase project and set it up as a web app. Then, copy the configuration data and create **firebaseConfig.js **under the Firebase folder with your data.
 
 ## App interface 
-## App interface 
-<img src="https://github.com/zhipengwu90/VFriend/blob/main/MDimg/AddFriend.png" width="300">
-<img src="https://github.com/zhipengwu90/VFriend/blob/main/MDimg/Chat.png" width="300">
-<img src="https://github.com/zhipengwu90/VFriend/blob/main/MDimg/Chat.png" width="300">
+
+<img src="https://github.com/zhipengwu90/VFriend/blob/main/MDimg/AddFriend.png" width="250">
+<img src="https://github.com/zhipengwu90/VFriend/blob/main/MDimg/Chat.png" width="250">
+<img src="https://github.com/zhipengwu90/VFriend/blob/main/MDimg/Chat.png" width="250">
 
 ## Tutorials and Resources
 
