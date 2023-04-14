@@ -6,14 +6,15 @@ Functionality
 VFriend allows users to create virtual characters and chat with them using natural language. The app utilizes the OpenAI API to generate responses from the virtual friend, making the conversation feel more real. Users can also store information about their virtual characters, such as name, photo, and interests, in Firebase Firestore.
 
 ## Configuration
+
 To run this app, you will need to have your OpenAI API key and create an **apikey.js** file under the OpenAI folder with your own API key. Additionally, you will need to create a Firebase project and set it up as a web app. Then, copy the configuration data and create **firebaseConfig.js **under the Firebase folder with your data.
 
-## App interface 
+## App interface
 
 <div style="display: flex;">
+  <img src="https://github.com/zhipengwu90/VFriend/blob/main/MDimg/Chat.png" width="250">
+  <img src="https://github.com/zhipengwu90/VFriend/blob/main/MDimg/Talk_To_Cat.png" width="250">
   <img src="https://github.com/zhipengwu90/VFriend/blob/main/MDimg/AddFriend.png" width="250">
-  <img src="https://github.com/zhipengwu90/VFriend/blob/main/MDimg/Chat.png" width="250">
-  <img src="https://github.com/zhipengwu90/VFriend/blob/main/MDimg/Chat.png" width="250">
 </div>
 
 ## Tutorials and Resources
@@ -27,4 +28,4 @@ The following tutorials and resources were used to build this app:
 
 ## ChatGPT Integration
 
-Approximately 10% of the codebase utilizes ChatGPT. 
+Approximately 10% of the codebase utilizes ChatGPT.
