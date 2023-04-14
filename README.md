@@ -10,9 +10,11 @@ To run this app, you will need to have your OpenAI API key and create an **apike
 
 ## App interface 
 
-<img src="https://github.com/zhipengwu90/VFriend/blob/main/MDimg/AddFriend.png" width="250">
-<img src="https://github.com/zhipengwu90/VFriend/blob/main/MDimg/Chat.png" width="250">
-<img src="https://github.com/zhipengwu90/VFriend/blob/main/MDimg/Chat.png" width="250">
+<div style="display: flex;">
+  <img src="https://github.com/zhipengwu90/VFriend/blob/main/MDimg/AddFriend.png" width="250">
+  <img src="https://github.com/zhipengwu90/VFriend/blob/main/MDimg/Chat.png" width="250">
+  <img src="https://github.com/zhipengwu90/VFriend/blob/main/MDimg/Chat.png" width="250">
+</div>
 
 ## Tutorials and Resources
 
