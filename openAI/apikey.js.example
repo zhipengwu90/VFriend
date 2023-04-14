@@ -1,0 +1,4 @@
+//replace with your own openAi apiKey
+const OPENAI_API_KEY = "your APIkey"
+
+export default OPENAI_API_KEY;
